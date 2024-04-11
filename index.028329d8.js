@@ -1,0 +1,4 @@
+const e=document.querySelector(".carousel__track"),t=Array.from(e.children),r=document.querySelector(".carousel__button-right"),l=document.querySelector(".carousel__button-left"),n=t[0].getBoundingClientRect().width,c=(e,t)=>{e.style.left=n*t+"px"};t.forEach(c),window.addEventListener("resize",e=>{t.forEach(c)});// eslint-disable-next-line no-shadow
+const s=(e,t,r)=>{e.style.transform="translateX(-"+r.style.left+")",t.classList.remove("current-slide"),r.classList.add("current-slide")};l.addEventListener("click",r=>{let l=e.querySelector(".current-slide"),n=l.previousElementSibling;n||(n=t[t.length-1]),s(e,l,n)}),r.addEventListener("click",r=>{let l=e.querySelector(".current-slide"),n=l.nextElementSibling;n||(n=t[0]),s(e,l,n)});//# sourceMappingURL=index.028329d8.js.map
+
+//# sourceMappingURL=index.028329d8.js.map
